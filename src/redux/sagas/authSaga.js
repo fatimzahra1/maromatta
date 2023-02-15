@@ -5,7 +5,7 @@ import {
   SIGNIN, SIGNIN_WITH_FACEBOOK,
   SIGNIN_WITH_GITHUB, SIGNIN_WITH_GOOGLE,
   SIGNOUT, SIGNUP
-} from '@/constants/constants';
+} from '../../constants/constants';
 import { SIGNIN as ROUTE_SIGNIN } from '@/constants/routes';
 import defaultAvatar from '@/images/defaultAvatar.jpg';
 import defaultBanner from '@/images/defaultBanner.jpg';
