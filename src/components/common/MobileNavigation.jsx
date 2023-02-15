@@ -1,4 +1,4 @@
-import { BasketToggle } from './components/basket';
+import { BasketToggle } from '../basket';
 import { HOME, SIGNIN } from './constants/routes';
 import PropType from 'prop-types';
 import React from 'react';
