@@ -1,7 +1,7 @@
-import { MessageDisplay } from '@/components/common';
-import { ProductShowcaseGrid } from '@/components/product';
-import { useDocumentTitle, useFeaturedProducts, useScrollTop } from '@/hooks';
-import bannerImg from '@/images/banner-guy.jpg';
+import { MessageDisplay } from '../../components/common';
+import { ProductShowcaseGrid } from '../../components/product';
+import { useDocumentTitle, useFeaturedProducts, useScrollTop } from '../../hooks';
+import bannerImg from '../../images/banner-guy.jpg';
 import React from 'react';
 
 const FeaturedProducts = () => {

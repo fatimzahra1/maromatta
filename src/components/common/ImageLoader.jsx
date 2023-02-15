@@ -1,4 +1,4 @@
-import { LoadingOutlined } from '../ant-design/icons';
+import { LoadingOutlined } from '@ant-design/icons';
 import PropType from 'prop-types';
 import React, { useState } from 'react';
 
