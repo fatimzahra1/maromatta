@@ -23,17 +23,13 @@ const root = document.getElementById("app");
 render(<Preloader />, root);
 
 firebase.auth.onAuthStateChanged((user) => {
-console.log("preloader")
   if (user) {
     store.dispatch(onAuthStateSuccess(user));
-console.log("there is a user")
   } else {
     store.dispatch(onAuthStateFail("Failed to authenticate"));
-console.log("no user")
   }
   // then render the app after checking the auth state
   render(<App store={store} persistor={persistor} />, root);
-console.log("now the app")
 });
 
 if (process.env.NODE_ENV === "production" && "serviceWorker" in navigator) {

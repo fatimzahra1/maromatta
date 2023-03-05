@@ -29,7 +29,7 @@ const SocialLogin = ({ isLoading }) => {
       >
         {/* <i className="fab fa-facebook" /> */}
         <FacebookOutlined />
-        Continue with Facebook
+        Förtsätt med Facebook
       </button>
       <button
         className="button auth-provider-button provider-google"

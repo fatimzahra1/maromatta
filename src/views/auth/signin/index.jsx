@@ -65,7 +65,7 @@ const  SignIn  =  ({  history  })  =>  {
                     )}
                     <div  className={`auth  ${authStatus?.message  &&  (!authStatus?.success  &&  "input-error")}`}>
                         <div  className="auth-main">
-                            <h3>Sign  in  to  Maromatta</h3>
+                            <h3>Logga in till Maromatta</h3>
                             <br  />
                             <div  className="auth-wrapper">
                                 <Formik
@@ -106,7 +106,7 @@ const  SignIn  =  ({  history  })  =>  {
                                                     style={{  textDecoration:  "underline"  }}
                                                     to={FORGOT_PASSWORD}
                                                 >
-                                                    <span>Forgot  password?</span>
+                                                    <span>glömt lösnord?</span>
                                                 </Link>
                                                 <button
                                                     className="button  auth-button"
@@ -130,7 +130,7 @@ const  SignIn  =  ({  history  })  =>  {
                     </div>
                     <div  className="auth-message">
                         <span  className="auth-info">
-                            <strong>Har&apos;inget  konto?</strong>
+                            <strong>Har inget konto?</strong>
                         </span>
                         <button
                             className="button  button-small  button-border  button-border-gray  button-icon"
