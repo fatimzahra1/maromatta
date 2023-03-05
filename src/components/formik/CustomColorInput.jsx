@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable react/forbid-prop-types */
-import PropType from 'prop-types';
-import React from 'react';
+import PropType from "prop-types";
+import React from "react";
 
 const InputColor = (props) => {
   const {
     name, form, push, remove
   } = props;
-  const [selectedColor, setSelectedColor] = React.useState('');
+  const [selectedColor, setSelectedColor] = React.useState("");
 
   const handleColorChange = (e) => {
     const val = e.target.value;
@@ -17,7 +17,7 @@ const InputColor = (props) => {
   const handleAddSelectedColor = () => {
     if (!form.values[name].includes(selectedColor)) {
       push(selectedColor);
-      setSelectedColor('');
+      setSelectedColor("");
     }
   };
 
@@ -38,7 +38,7 @@ const InputColor = (props) => {
               <h4
                 className="text-link"
                 onClick={handleAddSelectedColor}
-                style={{ textDecoration: 'underline' }}
+                style={{ textDecoration: "underline" }}
                 role="presentation"
               >
                 <i className="fa fa-check" />

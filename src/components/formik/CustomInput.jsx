@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/forbid-prop-types */
-import PropType from 'prop-types';
-import React from 'react';
+import PropType from "prop-types";
+import React from "react";
 
 const CustomInput = ({
   field, form: { touched, errors }, label, inputRef, ...props
@@ -15,7 +15,7 @@ const CustomInput = ({
     <input
       type="text"
       id={field.name}
-      className={`input-form ${touched[field.name] && errors[field.name] && 'input-error'}`}
+      className={`input-form ${touched[field.name] && errors[field.name] && "input-error"}`}
       ref={inputRef}
       {...field}
       {...props}

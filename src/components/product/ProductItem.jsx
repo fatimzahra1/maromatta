@@ -1,10 +1,10 @@
-import { CheckOutlined } from '@ant-design/icons';
-import { ImageLoader } from '../../components/common';
-import { displayMoney } from '../../helpers/utils';
-import PropType from 'prop-types';
-import React from 'react';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import { useHistory } from 'react-router-dom';
+import { CheckOutlined } from "@ant-design/icons";
+import { ImageLoader } from "../../components/common";
+import { displayMoney } from "../../helpers/utils";
+import PropType from "prop-types";
+import React from "react";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import { useHistory } from "react-router-dom";
 
 const ProductItem = ({ product, isItemOnBasket, addToBasket }) => {
   const history = useHistory();
@@ -26,10 +26,10 @@ const ProductItem = ({ product, isItemOnBasket, addToBasket }) => {
   return (
     <SkeletonTheme color="#e1e1e1" highlightColor="#f2f2f2">
       <div
-        className={`product-card ${!product.id ? 'product-loading' : ''}`}
+        className={`product-card ${!product.id ? "product-loading" : ""}`}
         style={{
-          border: product && itemOnBasket ? '1px solid #a6a5a5' : '',
-          boxShadow: product && itemOnBasket ? '0 10px 15px rgba(0, 0, 0, .07)' : 'none'
+          border: product && itemOnBasket ? "1px solid #a6a5a5" : "",
+          boxShadow: product && itemOnBasket ? "0 10px 15px rgba(0, 0, 0, .07)" : "none"
         }}
       >
         {itemOnBasket && <CheckOutlined className="fa fa-check product-card-check" />}
@@ -61,11 +61,11 @@ const ProductItem = ({ product, isItemOnBasket, addToBasket }) => {
         </div>
         {product.id && (
           <button
-            className={`product-card-button button-small button button-block ${itemOnBasket ? 'button-border button-border-gray' : ''}`}
+            className={`product-card-button button-small button button-block ${itemOnBasket ? "button-border button-border-gray" : ""}`}
             onClick={handleAddToBasket}
             type="button"
           >
-            {itemOnBasket ? 'Remove from basket' : 'Add to basket'}
+            {itemOnBasket ? "Remove from basket" : "Add to basket"}
           </button>
         )}
 

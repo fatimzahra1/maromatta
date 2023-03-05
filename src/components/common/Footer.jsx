@@ -1,7 +1,7 @@
-import * as Route from '../../constants/routes';
-import logo from '../../images/logo-full.png';
-import React from 'react';
-import { useLocation } from 'react-router-dom';
+import * as Route from "../../constants/routes";
+import logo from "../../images/logo-full.png";
+import React from "react";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
   const { pathname } = useLocation();
@@ -17,7 +17,7 @@ const Footer = () => {
         <strong>
           <span>
             Utvecklad av
-            {' '}
+            {" "}
             <a href="https://github.com/fatimzahra1">Fatima Ezzahraa El Madini</a>
           </span>
         </strong>

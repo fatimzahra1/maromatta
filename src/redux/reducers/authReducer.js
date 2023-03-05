@@ -1,10 +1,10 @@
-import { SIGNIN_SUCCESS, SIGNOUT_SUCCESS } from '../../constants/constants';
+import { SIGNIN_SUCCESS, SIGNOUT_SUCCESS } from "../../constants/constants";
 
 const initState = null;
 // {
-// id: 'test-123',
-// role: 'ADMIN',
-// provider: 'password'
+// id: "test-123",
+// role: "ADMIN",
+// provider: "password"
 // };
 
 export default (state = initState, action) => {

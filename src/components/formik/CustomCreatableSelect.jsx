@@ -1,8 +1,8 @@
 /* eslint-disable react/forbid-prop-types */
-import { useField } from 'formik';
-import PropType from 'prop-types';
-import React from 'react';
-import CreatableSelect from 'react-select/creatable';
+import { useField } from "formik";
+import PropType from "prop-types";
+import React from "react";
+import CreatableSelect from "react-select/creatable";
 
 const CustomCreatableSelect = (props) => {
   const [field, meta, helpers] = useField(props);
@@ -22,9 +22,9 @@ const CustomCreatableSelect = (props) => {
   };
 
   const handleKeyDown = (e) => {
-    if (type === 'number') {
+    if (type === "number") {
       const { key } = e.nativeEvent;
-      if (/\D/.test(key) && key !== 'Backspace') {
+      if (/\D/.test(key) && key !== "Backspace") {
         e.preventDefault();
       }
     }
@@ -52,11 +52,11 @@ const CustomCreatableSelect = (props) => {
             zIndex: 10
           }),
           container: (provided) => ({
-            ...provided, marginBottom: '1.2rem'
+            ...provided, marginBottom: "1.2rem"
           }),
           control: (provided) => ({
             ...provided,
-            border: touched && error ? '1px solid red' : '1px solid #cacaca'
+            border: touched && error ? "1px solid red" : "1px solid #cacaca"
           })
         }}
       />
@@ -66,10 +66,10 @@ const CustomCreatableSelect = (props) => {
 
 CustomCreatableSelect.defaultProps = {
   isMulti: false,
-  placeholder: '',
-  iid: '',
+  placeholder: "",
+  iid: "",
   options: [],
-  type: 'string'
+  type: "string"
 };
 
 CustomCreatableSelect.propTypes = {

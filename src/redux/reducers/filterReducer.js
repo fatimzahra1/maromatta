@@ -4,15 +4,15 @@ import {
   REMOVE_SELECTED_RECENT, RESET_FILTER, SET_BRAND_FILTER,
   SET_MAX_PRICE_FILTER,
   SET_MIN_PRICE_FILTER, SET_TEXT_FILTER
-} from '../../constants/constants';
+} from "../../constants/constants";
 
 const initState = {
   recent: [],
-  keyword: '',
-  brand: '',
+  keyword: "",
+  brand: "",
   minPrice: 0,
   maxPrice: 0,
-  sortBy: ''
+  sortBy: ""
 };
 
 export default (state = initState, action) => {
@@ -20,7 +20,7 @@ export default (state = initState, action) => {
     case SET_TEXT_FILTER:
       return {
         ...state,
-        recent: (!!state.recent.find((n) => n === action.payload) || action.payload === '') ? state.recent : [action.payload, ...state.recent],
+        recent: (!!state.recent.find((n) => n === action.payload) || action.payload === "") ? state.recent : [action.payload, ...state.recent],
         keyword: action.payload
       };
     case SET_BRAND_FILTER:

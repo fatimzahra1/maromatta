@@ -1,12 +1,12 @@
-import { BasketToggle } from '../basket';
-import { HOME, SIGNIN } from '../../constants/routes';
-import PropType from 'prop-types';
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import UserNav from '../../views/account/components/UserAvatar';
-import Badge from './Badge';
-import FiltersToggle from './FiltersToggle';
-import SearchBar from './SearchBar';
+import { BasketToggle } from "../basket";
+import { HOME, SIGNIN } from "../../constants/routes";
+import PropType from "prop-types";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import UserNav from "../../views/account/components/UserAvatar";
+import Badge from "./Badge";
+import FiltersToggle from "./FiltersToggle";
+import SearchBar from "./SearchBar";
 
 const Navigation = (props) => {
   const {
@@ -37,7 +37,7 @@ const Navigation = (props) => {
             >
 
               <Badge count={basketLength}>
-                <i className="fa fa-shopping-bag" style={{ fontSize: '2rem' }} />
+                <i className="fa fa-shopping-bag" style={{ fontSize: "2rem" }} />
               </Badge>
             </button>
           )}

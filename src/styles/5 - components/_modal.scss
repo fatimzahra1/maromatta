@@ -1,5 +1,5 @@
 .ReactModal__Overlay {
-  z-index: map-get($z-index, 'modal');
+  z-index: map-get($z-index, "modal");
 }
 
 .ReactModal__Body--open {

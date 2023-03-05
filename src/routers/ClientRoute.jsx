@@ -1,11 +1,11 @@
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable no-nested-ternary */
-import { ADMIN_DASHBOARD, SIGNIN } from '../constants/routes';
-import PropType from 'prop-types';
-import React from 'react';
-import { connect } from 'react-redux';
-import { Redirect, Route } from 'react-router-dom';
+import { ADMIN_DASHBOARD, SIGNIN } from "../constants/routes";
+import PropType from "prop-types";
+import React from "react";
+import { connect } from "react-redux";
+import { Redirect, Route } from "react-router-dom";
 
 const PrivateRoute = ({
   isAuth, role, component: Component, ...rest
@@ -13,7 +13,7 @@ const PrivateRoute = ({
   <Route
     {...rest}
     component={(props) => {
-      if (isAuth && role === 'USER') {
+      if (isAuth && role === "USER") {
         return (
           <main className="content">
             <Component {...props} />
@@ -21,7 +21,7 @@ const PrivateRoute = ({
         );
       }
 
-      if (isAuth && role === 'ADMIN') {
+      if (isAuth && role === "ADMIN") {
         return <Redirect to={ADMIN_DASHBOARD} />;
       }
 
@@ -39,7 +39,7 @@ const PrivateRoute = ({
 
 PrivateRoute.defaultProps = {
   isAuth: false,
-  role: 'USER'
+  role: "USER"
 };
 
 PrivateRoute.propTypes = {
@@ -52,7 +52,7 @@ PrivateRoute.propTypes = {
 
 const mapStateToProps = ({ auth }) => ({
   isAuth: !!auth,
-  role: auth?.role || ''
+  role: auth?.role || ""
 });
 
 export default connect(mapStateToProps)(PrivateRoute);

@@ -1,8 +1,8 @@
 /* eslint-disable react/forbid-prop-types */
-import { useField } from 'formik';
-import PropType from 'prop-types';
-import React from 'react';
-import PhoneInput from 'react-phone-input-2';
+import { useField } from "formik";
+import PropType from "prop-types";
+import React from "react";
+import PhoneInput from "react-phone-input-2";
 
 const CustomMobileInput = (props) => {
   const [field, meta, helpers] = useField(props);
@@ -33,7 +33,7 @@ const CustomMobileInput = (props) => {
         country="ph"
         inputClass="input-form d-block"
         style={{
-          border: touched && error ? '1px solid red' : '1px solid #cacaca'
+          border: touched && error ? "1px solid red" : "1px solid #cacaca"
         }}
         inputExtraProps={{ required: true }}
         onChange={handleChange}
@@ -45,8 +45,8 @@ const CustomMobileInput = (props) => {
 };
 
 CustomMobileInput.defaultProps = {
-  label: 'Mobile Number',
-  placeholder: '09254461351'
+  label: "Mobile Number",
+  placeholder: "09254461351"
 };
 
 CustomMobileInput.propTypes = {

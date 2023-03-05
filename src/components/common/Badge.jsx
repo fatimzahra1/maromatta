@@ -1,5 +1,5 @@
-import PropType from 'prop-types';
-import React from 'react';
+import PropType from "prop-types";
+import React from "react";
 
 const Badge = ({ count, children }) => (
   <div className="badge">

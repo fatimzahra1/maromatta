@@ -2,14 +2,14 @@ import {
   IS_AUTHENTICATING, LOADING,
   SET_AUTH_STATUS,
   SET_REQUEST_STATUS
-} from '../../constants/constants';
+} from "../../constants/constants";
 
 const initState = {
   loading: false,
   isAuthenticating: false,
   authStatus: null,
   requestStatus: null,
-  theme: 'light'
+  theme: "light"
 };
 
 export default (state = initState, action) => {

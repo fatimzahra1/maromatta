@@ -1,8 +1,8 @@
-import { ImageLoader } from '../common';
-import PropType from 'prop-types';
-import React from 'react';
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import { useHistory } from 'react-router-dom';
+import { ImageLoader } from "../common";
+import PropType from "prop-types";
+import React from "react";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import { useHistory } from "react-router-dom";
 
 const ProductFeatured = ({ product }) => {
   const history = useHistory();

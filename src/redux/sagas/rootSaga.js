@@ -1,8 +1,8 @@
-import * as ACTION from '../../constants/constants';
-import { takeLatest } from 'redux-saga/effects';
-import authSaga from './authSaga';
-import productSaga from './productSaga';
-import profileSaga from './profileSaga';
+import * as ACTION from "../../constants/constants";
+import { takeLatest } from "redux-saga/effects";
+import authSaga from "./authSaga";
+import productSaga from "./productSaga";
+import profileSaga from "./profileSaga";
 
 function* rootSaga() {
   yield takeLatest([

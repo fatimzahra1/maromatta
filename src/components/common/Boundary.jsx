@@ -1,5 +1,5 @@
-import PropType from 'prop-types';
-import React, { Component } from 'react';
+import PropType from "prop-types";
+import React, { Component } from "react";
 
 class Boundary extends Component {
   static getDerivedStateFromError() {

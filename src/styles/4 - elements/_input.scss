@@ -72,7 +72,7 @@ input[type=radio] + label {
 
 input[type=checkbox] + label:before,
 input[type=radio] + label:before {
-  content:'';
+  content:"";
   -webkit-appearance: none;
   background-color: $white;
   border: 2px solid $border-color-focus;
@@ -89,7 +89,7 @@ input[type=radio] + label:before {
 
 input[type=checkbox] + label:after,
 input[type=radio] + label:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -130,7 +130,7 @@ input[type=color] {
 .react-tel-input input[type=tel] {
   @extend input;
   width: 100% !important;
-  font-family: 'Tajawal' !important;
+  font-family: "Tajawal" !important;
   // margin-bottom: 1.2rem !important;
   font-size: $font-medium !important;
   border: 1px solid $border-color-focus !important;

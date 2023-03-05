@@ -1,25 +1,25 @@
-import PropType from 'prop-types';
-import React, { Component } from 'react';
+import PropType from "prop-types";
+import React, { Component } from "react";
 
 const railStyle = {
-  position: 'absolute',
-  width: '100%',
-  transform: 'translate(0%, -50%)',
+  position: "absolute",
+  width: "100%",
+  transform: "translate(0%, -50%)",
   height: 20,
-  cursor: 'pointer',
+  cursor: "pointer",
   zIndex: 300
-  // border: '1px solid grey',
+  // border: "1px solid grey",
 };
 
 const railCenterStyle = {
-  position: 'absolute',
-  width: '100%',
-  transform: 'translate(0%, -50%)',
+  position: "absolute",
+  width: "100%",
+  transform: "translate(0%, -50%)",
   height: 14,
   borderRadius: 7,
-  cursor: 'pointer',
-  pointerEvents: 'none',
-  backgroundColor: '#d0d0d0'
+  cursor: "pointer",
+  pointerEvents: "none",
+  backgroundColor: "#d0d0d0"
 };
 
 class TooltipRail extends Component {
@@ -33,12 +33,12 @@ class TooltipRail extends Component {
   }
 
   onMouseEnter() {
-    document.addEventListener('mousemove', this.onMouseMove);
+    document.addEventListener("mousemove", this.onMouseMove);
   }
 
   onMouseLeave() {
     this.setState({ value: null, percent: null });
-    document.removeEventListener('mousemove', this.onMouseMove);
+    document.removeEventListener("mousemove", this.onMouseMove);
   }
 
   onMouseMove(e) {
@@ -61,9 +61,9 @@ class TooltipRail extends Component {
           <div
             style={{
               left: `${percent}%`,
-              position: 'absolute',
-              marginLeft: '-11px',
-              marginTop: '-35px'
+              position: "absolute",
+              marginLeft: "-11px",
+              marginTop: "-35px"
             }}
           >
             <div className="tooltip">

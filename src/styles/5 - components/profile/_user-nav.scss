@@ -28,7 +28,7 @@
   background: $border-color-focus;
 
   &:after {
-    content: attr('data-alt');
+    content: attr("data-alt");
     position: absolute;
     left: 0;
     right: 0;

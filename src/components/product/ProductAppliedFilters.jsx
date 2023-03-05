@@ -1,18 +1,18 @@
 /* eslint-disable no-nested-ternary */
-import { CloseCircleOutlined } from '@ant-design/icons';
-import PropType from 'prop-types';
-import React from 'react';
-import { shallowEqual, useDispatch, useSelector } from 'react-redux';
-import { applyFilter } from '../../redux/actions/filterActions';
+import { CloseCircleOutlined } from "@ant-design/icons";
+import PropType from "prop-types";
+import React from "react";
+import { shallowEqual, useDispatch, useSelector } from "react-redux";
+import { applyFilter } from "../../redux/actions/filterActions";
 
 const ProductAppliedFilters = ({ filteredProductsCount }) => {
   const filter = useSelector((state) => state.filter, shallowEqual);
-  const fields = ['brand', 'minPrice', 'maxPrice', 'sortBy', 'keyword'];
+  const fields = ["brand", "minPrice", "maxPrice", "sortBy", "keyword"];
   const isFiltered = fields.some((key) => !!filter[key]);
   const dispatch = useDispatch();
 
   const onRemoveKeywordFilter = () => {
-    dispatch(applyFilter({ keyword: '' }));
+    dispatch(applyFilter({ keyword: "" }));
   };
 
   const onRemovePriceRangeFilter = () => {
@@ -20,11 +20,11 @@ const ProductAppliedFilters = ({ filteredProductsCount }) => {
   };
 
   const onRemoveBrandFilter = () => {
-    dispatch(applyFilter({ brand: '' }));
+    dispatch(applyFilter({ brand: "" }));
   };
 
   const onRemoveSortFilter = () => {
-    dispatch(applyFilter({ sortBy: '' }));
+    dispatch(applyFilter({ sortBy: "" }));
   };
 
   return !isFiltered ? null : (
@@ -33,7 +33,7 @@ const ProductAppliedFilters = ({ filteredProductsCount }) => {
         <div className="product-list-header-title">
           <h5>
             {filteredProductsCount > 0
-              && `Found ${filteredProductsCount} ${filteredProductsCount > 1 ? 'products' : 'product'}`}
+              && `Found ${filteredProductsCount} ${filteredProductsCount > 1 ? "products" : "product"}`}
           </h5>
         </div>
       </div>
@@ -91,13 +91,13 @@ const ProductAppliedFilters = ({ filteredProductsCount }) => {
             <span className="d-block">Sort By</span>
             <div className="pill padding-right-l">
               <h5 className="pill-content margin-0">
-                {filter.sortBy === 'price-desc'
-                  ? 'Price High - Low'
-                  : filter.sortBy === 'price-asc'
-                    ? 'Price Low - High'
-                    : filter.sortBy === 'name-desc'
-                      ? 'Name Z - A'
-                      : 'Name A - Z'}
+                {filter.sortBy === "price-desc"
+                  ? "Price High - Low"
+                  : filter.sortBy === "price-asc"
+                    ? "Price Low - High"
+                    : filter.sortBy === "name-desc"
+                      ? "Name Z - A"
+                      : "Name A - Z"}
               </h5>
               <div
                 className="pill-remove"

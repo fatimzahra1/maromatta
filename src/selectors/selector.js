@@ -18,11 +18,11 @@ export const selectFilter = (products, filter) => {
 
     return ((matchKeyword || matchDescription) && matchBrand && isInRange);
   }).sort((a, b) => {
-    if (filter.sortBy === 'name-desc') {
+    if (filter.sortBy === "name-desc") {
       return a.name < b.name ? 1 : -1;
-    } else if (filter.sortBy === 'name-asc') {
+    } else if (filter.sortBy === "name-asc") {
       return a.name > b.name ? 1 : -1;
-    } else if (filter.sortBy === 'price-desc') {
+    } else if (filter.sortBy === "price-desc") {
       return a.price < b.price ? 1 : -1;
     }
 

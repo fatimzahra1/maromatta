@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/forbid-prop-types */
-import PropType from 'prop-types';
-import React from 'react';
+import PropType from "prop-types";
+import React from "react";
 
 const CustomTextarea = ({
   field, form: { touched, errors }, label, ...props
@@ -17,7 +17,7 @@ const CustomTextarea = ({
       cols={30}
       rows={4}
       id={field.name}
-      className={`input-form ${touched[field.name] && errors[field.name] && 'input-error'}`}
+      className={`input-form ${touched[field.name] && errors[field.name] && "input-error"}`}
       {...field}
       {...props}
     />

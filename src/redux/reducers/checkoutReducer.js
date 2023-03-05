@@ -1,15 +1,15 @@
 import {
   RESET_CHECKOUT, SET_CHECKOUT_PAYMENT_DETAILS, SET_CHECKOUT_SHIPPING_DETAILS
-} from '../../constants/constants';
+} from "../../constants/constants";
 
 const defaultState = {
   shipping: {},
   payment: {
-    type: 'paypal',
-    name: '',
-    cardnumber: '',
-    expiry: '',
-    ccv: ''
+    type: "paypal",
+    name: "",
+    cardnumber: "",
+    expiry: "",
+    ccv: ""
   }
 };
 

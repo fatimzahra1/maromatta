@@ -1,10 +1,10 @@
 /* eslint-disable react/forbid-prop-types */
-import { Boundary, MessageDisplay } from '../../components/common';
-import PropType from 'prop-types';
-import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { setLoading } from '../../redux/actions/miscActions';
-import { getProducts } from '../../redux/actions/productActions';
+import { Boundary, MessageDisplay } from "../../components/common";
+import PropType from "prop-types";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { setLoading } from "../../redux/actions/miscActions";
+import { getProducts } from "../../redux/actions/productActions";
 
 const ProductList = (props) => {
   const {
@@ -33,12 +33,12 @@ const ProductList = (props) => {
 
   if (filteredProducts.length === 0 && !isLoading) {
     return (
-      <MessageDisplay message={requestStatus?.message || 'inga produkter hittades.'} />
+      <MessageDisplay message={requestStatus?.message || "inga produkter hittades."} />
     );
   } if (filteredProducts.length === 0 && requestStatus) {
     return (
       <MessageDisplay
-        message={requestStatus?.message || 'Något gick fel :('}
+        message={requestStatus?.message || "Något gick fel :("}
         action={fetchProducts}
         buttonLabel="försök igen"
       />
@@ -47,7 +47,7 @@ const ProductList = (props) => {
   return (
     <Boundary>
       {children}
-      {/* Show 'Show More' button if products length is less than total products */}
+      {/* Show "Show More" button if products length is less than total products */}
       {products.items.length < products.total && (
         <div className="d-flex-center padding-l">
           <button
@@ -56,7 +56,7 @@ const ProductList = (props) => {
             onClick={fetchProducts}
             type="button"
           >
-            {isFetching ? 'Hämtar artiklar...' : 'Visa fler artiklar'}
+            {isFetching ? "Hämtar artiklar..." : "Visa fler artiklar"}
           </button>
         </div>
       )}

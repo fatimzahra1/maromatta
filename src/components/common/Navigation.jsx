@@ -1,18 +1,18 @@
 /* eslint-disable indent */
-import { FilterOutlined, ShoppingOutlined } from '@ant-design/icons';
-import * as ROUTE from '../../constants/routes';
-import logo from '../../images/logo-full.png';
-import React, { useEffect, useRef } from 'react';
-import { useSelector } from 'react-redux';
+import { FilterOutlined, ShoppingOutlined } from "@ant-design/icons";
+import * as ROUTE from "../../constants/routes";
+import logo from "../../images/logo-full.png";
+import React, { useEffect, useRef } from "react";
+import { useSelector } from "react-redux";
 import {
   Link, NavLink, useLocation
-} from 'react-router-dom';
-import UserAvatar from '../../views/account/components/UserAvatar';
-import BasketToggle from '../basket/BasketToggle';
-import Badge from './Badge';
-import FiltersToggle from './FiltersToggle';
-import MobileNavigation from './MobileNavigation';
-import SearchBar from './SearchBar';
+} from "react-router-dom";
+import UserAvatar from "../../views/account/components/UserAvatar";
+import BasketToggle from "../basket/BasketToggle";
+import Badge from "./Badge";
+import FiltersToggle from "./FiltersToggle";
+import MobileNavigation from "./MobileNavigation";
+import SearchBar from "./SearchBar";
 
 const Navigation = () => {
   const navbar = useRef(null);
@@ -28,16 +28,16 @@ const Navigation = () => {
   const scrollHandler = () => {
     if (navbar.current && window.screen.width > 480) {
       if (window.pageYOffset >= 70) {
-        navbar.current.classList.add('is-nav-scrolled');
+        navbar.current.classList.add("is-nav-scrolled");
       } else {
-        navbar.current.classList.remove('is-nav-scrolled');
+        navbar.current.classList.remove("is-nav-scrolled");
       }
     }
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', scrollHandler);
-    return () => window.removeEventListener('scroll', scrollHandler);
+    window.addEventListener("scroll", scrollHandler);
+    return () => window.removeEventListener("scroll", scrollHandler);
   }, []);
 
   const onClickLink = (e) => {
@@ -54,7 +54,7 @@ const Navigation = () => {
     ROUTE.FORGOT_PASSWORD
   ];
 
-  if (store.user && store.user.role === 'ADMIN') {
+  if (store.user && store.user.role === "ADMIN") {
     return null;
   } if (window.screen.width <= 800) {
     return (
@@ -98,7 +98,7 @@ const Navigation = () => {
               >
 
                 <Badge count={store.basketLength}>
-                  <ShoppingOutlined style={{ fontSize: '2.4rem' }} />
+                  <ShoppingOutlined style={{ fontSize: "2.4rem" }} />
                 </Badge>
               </button>
             )}

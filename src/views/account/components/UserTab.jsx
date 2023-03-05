@@ -1,5 +1,5 @@
-import PropType from 'prop-types';
-import React, { useState } from 'react';
+import PropType from "prop-types";
+import React, { useState } from "react";
 
 const UserTab = (props) => {
   const { children } = props;
@@ -12,7 +12,7 @@ const UserTab = (props) => {
         <ul className="user-tab-menu">
           {children.map((child) => (
             <li
-              className={`user-tab-item ${child.props.index === activeTab ? 'user-tab-active' : ''}`}
+              className={`user-tab-item ${child.props.index === activeTab ? "user-tab-active" : ""}`}
               key={child.props.label}
               role="presentation"
               onClick={() => onClickTabItem(child.props.index)}

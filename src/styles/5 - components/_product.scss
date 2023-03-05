@@ -409,7 +409,7 @@
   width: 100%;
   position: relative;
   background: $background-color;
-  z-index: map-get($z-index, 'search');
+  z-index: map-get($z-index, "search");
 }
 
 .product-search-header {
@@ -423,7 +423,7 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, .02);
   position: sticky;
   top: 0;
-  z-index: map-get($z-index, 'navigation');
+  z-index: map-get($z-index, "navigation");
 }
 
 .product-search-body {

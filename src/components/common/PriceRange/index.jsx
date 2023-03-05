@@ -1,16 +1,16 @@
-import PropType from 'prop-types';
-import React, { useState } from 'react';
+import PropType from "prop-types";
+import React, { useState } from "react";
 import {
   Handles, Rail, Slider, Ticks, Tracks
-} from 'react-compound-slider';
-import Handle from './Handle';
-import SliderRail from './SliderRail';
-import Tick from './Tick';
-import Track from './Track';
+} from "react-compound-slider";
+import Handle from "./Handle";
+import SliderRail from "./SliderRail";
+import Tick from "./Tick";
+import Track from "./Track";
 
 const sliderStyle = {
-  position: 'relative',
-  width: '100%'
+  position: "relative",
+  width: "100%"
 };
 
 const PriceRange = ({
@@ -40,10 +40,10 @@ const PriceRange = ({
   };
 
 
-  const inputClassName = () => (state.inputError ? 'price-range-input price-input-error' : 'price-range-input');
+  const inputClassName = () => (state.inputError ? "price-range-input price-input-error" : "price-range-input");
 
   return (
-    <div style={{ height: 120, width: '100%' }}>
+    <div style={{ height: 120, width: "100%" }}>
       <div className="price-range-control">
         <input
           className={inputClassName()}

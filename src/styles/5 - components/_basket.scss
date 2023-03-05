@@ -8,7 +8,7 @@
   transform: translateX(100%);
   box-shadow: 0 10px 15px rgba(0, 0, 0, .08);
   @include bezier-transition(transform);
-  z-index: map-get($z-index, 'basket');
+  z-index: map-get($z-index, "basket");
 
   @include mobile {
     width: 100%;
@@ -78,7 +78,7 @@
   position: sticky;
   top: -20px;
   background: $white;
-  z-index: map-get($z-index, 'basket');
+  z-index: map-get($z-index, "basket");
 }
 
 
@@ -136,7 +136,7 @@
   width: 100%;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     margin: auto;

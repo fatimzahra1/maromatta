@@ -1,12 +1,12 @@
-import { CloseOutlined } from '@ant-design/icons';
-import { BasketItemControl } from '../basket';
-import { ImageLoader } from '../common';
-import { displayMoney } from '../../helpers/utils';
-import PropType from 'prop-types';
-import React from 'react';
-import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { removeFromBasket } from '../../redux/actions/basketActions';
+import { CloseOutlined } from "@ant-design/icons";
+import { BasketItemControl } from "../basket";
+import { ImageLoader } from "../common";
+import { displayMoney } from "../../helpers/utils";
+import PropType from "prop-types";
+import React from "react";
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import { removeFromBasket } from "../../redux/actions/basketActions";
 
 const BasketItem = ({ product }) => {
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ const BasketItem = ({ product }) => {
           />
         </div>
         <div className="basket-item-details">
-          <Link to={`/product/${product.id}`} onClick={() => document.body.classList.remove('is-basket-open')}>
+          <Link to={`/product/${product.id}`} onClick={() => document.body.classList.remove("is-basket-open")}>
             <h4 className="underline basket-item-name">
               {product.name}
             </h4>
@@ -38,7 +38,7 @@ const BasketItem = ({ product }) => {
               <span className="spec-title">Storlek</span>
               <h5 className="my-0">
                 {product.selectedSize}
-                {' '}
+                {" "}
                 cm
               </h5>
             </div>
@@ -46,9 +46,9 @@ const BasketItem = ({ product }) => {
               <span className="spec-title">Färg</span>
               <div style={{
                 backgroundColor: product.selectedColor || product.availableColors[0],
-                width: '15px',
-                height: '15px',
-                borderRadius: '50%'
+                width: "15px",
+                height: "15px",
+                borderRadius: "50%"
               }}
               />
             </div>

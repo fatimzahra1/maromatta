@@ -1,11 +1,11 @@
-import PropType from 'prop-types';
-import React from 'react';
+import PropType from "prop-types";
+import React from "react";
 
 const MessageDisplay = ({
   message, description, buttonLabel, action
 }) => (
   <div className="loader">
-    <h2 className="text-center" style={{ wordBreak: 'break-all' }}>{message || 'Message'}</h2>
+    <h2 className="text-center" style={{ wordBreak: "break-all" }}>{message || "Message"}</h2>
     {description && <span>{description}</span>}
     <br />
     {action && (
@@ -14,7 +14,7 @@ const MessageDisplay = ({
         onClick={action}
         type="button"
       >
-        {buttonLabel || 'Okay'}
+        {buttonLabel || "Okay"}
       </button>
     )}
   </div>
@@ -22,7 +22,7 @@ const MessageDisplay = ({
 
 MessageDisplay.defaultProps = {
   description: undefined,
-  buttonLabel: 'Okay',
+  buttonLabel: "Okay",
   action: undefined
 };
 
