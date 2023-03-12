@@ -14,6 +14,7 @@ const PrivateRoute = ({
     {...rest}
     component={(props) => {
       if (isAuth && role === "USER") {
+console.log("user")
         return (
           <main className="content">
             <Component {...props} />
@@ -21,8 +22,11 @@ const PrivateRoute = ({
         );
       }
 
-      if (isAuth && role === "ADMIN") {
-        return <Redirect to={ADMIN_DASHBOARD} />;
+      if (isAuth || role === "ADMIN") {
+console.log("admin")
+        return(<Redirect to={ADMIN_DASHBOARD} />);
+
+
       }
 
       return (

@@ -13,7 +13,10 @@ import PublicRoute from "./PublicRoute";
 // v5.0 breaks navigation
 export const history = createBrowserHistory();
 
-const AppRouter = () => (
+const AppRouter = () =>
+
+(
+
   <Router history={history}>
     <>
       <Navigation />
@@ -83,6 +86,7 @@ const AppRouter = () => (
           component={view.CheckOutStep3}
           path={ROUTES.CHECKOUT_STEP_3}
         />
+
         <AdminRoute
           component={view.Dashboard}
           exact

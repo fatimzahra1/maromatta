@@ -54,7 +54,7 @@ const  Basket  =  ()  =>  {
         }
     };
 
-    return  user  &&  user.role  ===  "ADMIN"  ?  null  :  (
+    return  user  &&  user.role  ===  "ADMIN"  ?null :  (
         <Boundary>
             <Modal
                 isOpen={isOpenModal}

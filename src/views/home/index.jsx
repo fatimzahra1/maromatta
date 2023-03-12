@@ -33,9 +33,7 @@ const  Home  =  ()  =>  {
                 <div  className="banner">
                     <div  className="banner-desc">
                         <h1  className="text-thin">
-                            <strong>Gör  ditt  hem</strong>
-                            &nbsp;Till  ditt&nbsp;
-                            <strong>Hem</strong>
+                            <strong>Gör  ditt  hem till ditt hem</strong>
                         </h1>
                         <p>
                           Att  köpa  våra  handgjorda  mattor  kommer  att  göra  både  ditt  hem  och  din  ficka  lycklig.

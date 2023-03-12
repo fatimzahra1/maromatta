@@ -9,12 +9,18 @@ import { Redirect, Route } from "react-router-dom";
 const AdminRoute = ({
   isAuth, role, component: Component, ...rest
 }) => (
+ <>
+{console.log("ha")}
   <Route
     {...rest}
+
     component={(props) => (
-      isAuth && role === "ADMIN" ? (
+
+isAuth&& role === "ADMIN" ? (
+
         <>
           <AdminNavigation />
+{console.log("ho")}
           <main className="content-admin">
             <AdminSideBar />
             <div className="content-admin-wrapper">
@@ -22,12 +28,14 @@ const AdminRoute = ({
             </div>
           </main>
         </>
-      ) : <Redirect to="/" />
+      ) : (<>{console.log("noad")}<Redirect to="/" /></>)
     )}
-  />
+  /></>
 );
 
-const mapStateToProps = ({ auth }) => ({
+const mapStateToProps = ({ auth }) => (
+{
+
   isAuth: !!auth,
   role: auth?.role || ""
 });

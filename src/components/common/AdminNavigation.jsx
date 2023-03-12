@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import UserAvatar from "../../views/account/components/UserAvatar";
 
 const AdminNavigation = () => {
+console.log("adminnanvigation")
   const { isAuthenticating, profile } = useSelector((state) => ({
     isAuthenticating: state.app.isAuthenticating,
     profile: state.profile

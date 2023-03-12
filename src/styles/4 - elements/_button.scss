@@ -2,7 +2,7 @@
   background: $button-color;
   padding: $m-size;
   border: 1px solid $button-color;
-  color: $white;
+  color: rgb(252, 255, 103);
   font-weight: bold;
   position: relative;
   display: flex;
@@ -22,7 +22,7 @@
   opacity: .5;
 
   &:hover {
-    cursor: not-allowed;   
+    cursor: not-allowed;
     // background: none;
   }
 }
