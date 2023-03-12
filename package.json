@@ -57,7 +57,6 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
-    "enzyme-adapter-react-15": "^1.4.4",
     "firebase": "^8.4.3",
     "firebase-functions": "^4.2.1",
     "formik": "^2.2.6",
