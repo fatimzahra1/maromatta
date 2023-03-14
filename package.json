@@ -47,8 +47,7 @@
     "terser-brunch": "^4.1.0",
     "uglifyify": "^5.0.0",
     "url-loader": "^4.1.1",
-    "vite": "^3.0.2",
-    "webpack-cli": "^5.0.1"
+    "vite": "^3.0.2"
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
