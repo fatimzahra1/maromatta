@@ -18,5 +18,5 @@ export default defineConfig({
  build: {
     chunkSizeWarningLimit: 1600,
   },
-base: '/https://fatimzahra1.github.io/maromatta/'
+base: '/maromatta/'
 })

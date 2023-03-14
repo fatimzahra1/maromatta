@@ -1,0 +1,1 @@
+import{a,j as s}from"./index.fac533a8.js";const i=()=>a("div",{className:"loader",style:{minHeight:"80vh"},children:[s("h3",{children:"Min \xF6nskelista"}),s("strong",{children:s("span",{className:"text-subtle",children:"Du har ingen'ans\xF6klista"})})]});export{i as default};
