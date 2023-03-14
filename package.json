@@ -47,10 +47,7 @@
     "uglifyify": "^5.0.2",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^4.1.1",
-    "vite": "^3.0.2",
-    "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.7.3",
-    "workbox-webpack-plugin": "^6.1.5"
+    "vite": "^3.0.2"
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
@@ -76,7 +73,6 @@
     "redux-thunk": "^2.3.0",
     "uuid": "^8.3.2",
     "webfontloader": "^1.6.28",
-    "webpack": "^5.76.1",
     "yup": "^0.32.9"
   }
 }
