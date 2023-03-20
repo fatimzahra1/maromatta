@@ -15,7 +15,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "serve": "vite preview",
- "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy" : "gh-pages -d build"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^2.0.0",
@@ -33,6 +34,7 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "group-css-media-queries-loader": "^3.0.2",
     "jest": "^26.6.3",
     "live-server": "^1.1.0",
